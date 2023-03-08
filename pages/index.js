@@ -23,7 +23,7 @@ const Movies = ({ movies }) => {
           {movies.map(movie => (
             <li key={movie._id} className="list__item">
               <Link href="/movie/[id]" as={`/movie/${movie._id}`}>
-                <a>
+                
                   {movie.poster && (
                     <img
                       src={imageUrlFor(movie.poster)
@@ -42,7 +42,7 @@ const Movies = ({ movies }) => {
                       Directed by {movie.director}
                     </span>
                   )}
-                </a>
+                
               </Link>
             </li>
           ))}

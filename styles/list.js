@@ -18,7 +18,7 @@ export default css`
     align-items: stretch;
   }
 
-  .list a {
+  .list span {
     text-decoration: none;
     display: block;
     flex-grow: 1;

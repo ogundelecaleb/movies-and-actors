@@ -132,8 +132,8 @@ const Movie = ({ movie }) => {
             <ul className="cast-list">
               {movie.cast.map(cast => (
                 <li key={cast._key} className="cast-list-item">
-                  <Link href="/person/[id]" as={`/person/${cast.person._id}`}>
-                    <a className="cast-list-link">
+                  <Link  href="/person/[id]" as={`/person/${cast.person._id}`}>
+                  <div className="cast-list-link">
                       <span>
                         {cast.person.image && (
                           <img src={imageUrlFor(cast.person.image).width(64)} />
@@ -147,7 +147,7 @@ const Movie = ({ movie }) => {
                           {cast.characterName}
                         </span>
                       </span>
-                    </a>
+                      </div>
                   </Link>
                 </li>
               ))}

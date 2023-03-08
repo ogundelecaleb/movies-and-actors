@@ -33,8 +33,8 @@ const Person = ({ person }) => {
           <ul className="list">
             {(person.actedIn || []).map(movie => (
               <li key={movie._id}>
-                <Link href="/movie/[id]" as={`/movie/${movie._id}`}>
-                  <a className="link">
+                <Link  href="/movie/[id]" as={`/movie/${movie._id}`}>
+                <div className="link">
                     {movie.poster && (
                       <img
                         src={imageUrlFor(movie.poster)
@@ -45,7 +45,7 @@ const Person = ({ person }) => {
                     <span>
                       {movie.title} ({movie.releaseDate.substr(0, 4)})
                     </span>
-                  </a>
+                    </div>
                 </Link>
               </li>
             ))}

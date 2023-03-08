@@ -12,10 +12,10 @@ export default function Layout(props) {
       </Head>
       <nav>
         <Link href="/">
-          <a>Movies</a>
+        <p> Movies</p>
         </Link>
         <Link href="/people">
-          <a>People</a>
+           <p>People</p>
         </Link>
       </nav>
       {/* <GithubCorner /> */}
@@ -40,6 +40,8 @@ export default function Layout(props) {
         nav {
           position: fixed;
           display: flex;
+          justify-content:center;
+          gap:60px;
           align-items: center;
           top: 0;
           left: 0;
@@ -49,7 +51,7 @@ export default function Layout(props) {
           height: 3.5rem;
         }
 
-        nav a {
+        nav p {
           flex-grow: 1;
           color: #fff;
           text-decoration: none;

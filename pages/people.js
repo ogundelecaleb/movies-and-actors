@@ -21,7 +21,7 @@ const People = ({ people }) => {
           {people.map(person => (
             <li key={person._id} className="list__item">
               <Link href="/person/[id]" as={`/person/${person._id}`}>
-                <a>
+                
                   {person.image && (
                     <img
                       src={imageUrlFor(person.image).width(300)}
@@ -30,7 +30,7 @@ const People = ({ people }) => {
                     />
                   )}
                   <h3>{person.name}</h3>
-                </a>
+                
               </Link>
             </li>
           ))}
